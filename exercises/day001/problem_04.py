@@ -13,7 +13,7 @@ def count_batches(n_samples, batch_size):
     2
     """
     # TODO
-    return print(int(n_samples//batch_size) + int((n_samples%batch_size)))
+    return (n_samples + batch_size - 1)//batch_size
 
 
 if __name__ == "__main__":

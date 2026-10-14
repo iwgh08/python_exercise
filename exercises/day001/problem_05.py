@@ -13,14 +13,14 @@ def batch_summary(n_samples, batch_size):
     - 나누어떨어지면 마지막 배치 크기는 batch_size 와 같다.
     - 조건문(if) 없이 산술 연산만으로 해결하세요.
     - 문제 4의 아이디어를 재사용해도 됩니다.
-
+    
     >>> batch_summary(1000, 32)
     '샘플 1000개 / 배치 크기 32 → 배치 32개, 마지막 배치 8개'
     >>> batch_summary(64, 32)
     '샘플 64개 / 배치 크기 32 → 배치 2개, 마지막 배치 32개'
     """
     # TODO
-    pass
+    return "샘플 " + str(n_samples) + "개 / 배치 크기 " + str(batch_size) + " → 배치 " +str((n_samples + batch_size - 1)//batch_size) + "개, 마지막 배치 " + str((n_samples - 1)%batch_size + 1) + "개"
 
 
 if __name__ == "__main__":

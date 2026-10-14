@@ -12,7 +12,7 @@ def seconds_to_hms(total_seconds):
     '0시간 0분 59초'
     """
     # TODO: // 와 % 를 사용해 hours, minutes, seconds 를 구한 뒤 문자열로 조립하세요.
-    return print(str(total_seconds // 3600)+'시간 '+str((total_seconds % 3600)//60)+'분 '+str((total_seconds % 3600)%60)+'초')
+    return str(total_seconds // 3600)+'시간 '+str((total_seconds % 3600)//60)+'분 '+str((total_seconds % 3600)%60)+'초'
 
 
 if __name__ == "__main__":
