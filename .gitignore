@@ -1,0 +1,10 @@
+# 가상환경 (컴퓨터마다 python -m venv .venv 로 새로 만든다)
+.venv*/
+
+# 파이썬·pytest 캐시
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 비밀 정보 (API 키 등)
+.env
