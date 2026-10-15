@@ -23,7 +23,7 @@ def format_log(epoch_text, total_text, loss_text, acc_text):
     'Epoch 007/100 | loss 2.5000 | acc 10.0%'
     """
     # TODO
-    pass
+    return f"Epoch {int(epoch_text):0{len(total_text)}d}/{int(total_text)} | loss {float(loss_text):.4f} | acc {float(acc_text):.1%}"
 
 
 if __name__ == "__main__":

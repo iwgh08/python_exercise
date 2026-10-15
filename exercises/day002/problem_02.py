@@ -12,7 +12,7 @@ def format_accuracy(correct, total):
     '정확도: 33.33%'
     """
     # TODO: f-string 을 사용하세요.
-    pass
+    return f"정확도: {correct/total:.2%}"
 
 
 if __name__ == "__main__":

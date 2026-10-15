@@ -14,7 +14,7 @@ def is_close(pred_text, target, tol):
     False
     """
     # TODO
-    pass
+    return abs(float(pred_text)-target)<=tol
 
 
 if __name__ == "__main__":

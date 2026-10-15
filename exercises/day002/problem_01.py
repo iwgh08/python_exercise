@@ -8,7 +8,7 @@ def total_score(a, b, c):
     252
     """
     # TODO: 문자열끼리 더하면 "908577" 이 됩니다. 먼저 변환하세요.
-    pass
+    return int(a) + int(b) + int(c)
 
 
 if __name__ == "__main__":

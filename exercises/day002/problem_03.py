@@ -13,7 +13,7 @@ def bmi_report(weight_text, height_cm_text):
     '키 175.0cm, 몸무게 70.0kg → BMI 22.86'
     """
     # TODO
-    pass
+    return f'키 {float(height_cm_text):.1f}cm, 몸무게 {float(weight_text):.1f}kg → BMI {float(weight_text)/(float(height_cm_text)*0.01)**2:.2f}'
 
 
 if __name__ == "__main__":
