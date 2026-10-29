@@ -11,7 +11,7 @@ def label_prediction(prob, threshold):
     >>> label_prediction(0.49, 0.5)
     'negative'
     """
-    # TODO
+    
     if prob >= threshold:
         return "positive"
     else:
