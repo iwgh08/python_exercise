@@ -14,8 +14,20 @@ def score_to_grade(score):
     >>> score_to_grade(101)
     'invalid'
     """
-    # TODO: 조건을 검사하는 순서가 중요합니다.
-    pass
+    if score > 100:
+        return "invalid"
+    elif score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    elif score >= 0:
+        return "F"
+    else:
+        return "invalid"
 
 
 if __name__ == "__main__":

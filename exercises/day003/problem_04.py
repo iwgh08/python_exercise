@@ -18,8 +18,25 @@ def confidence_label(prob_text):
     >>> confidence_label("1.2")
     'invalid'
     """
-    # TODO
-    pass
+    prob_text = float(prob_text)
+    if prob_text < 0 or prob_text > 1:
+        return "invalid"
+    elif prob_text >= 0.5:
+        if prob_text >= 0.9:
+            return "positive (high)"
+        elif prob_text < 0.6:
+            return "positive (low)"
+        else:
+            return "positive (medium)"
+    else:
+        if prob_text <= 0.1:
+            return "negative (high)"
+        elif prob_text > 0.4:
+            return "negative (low)"
+        else:
+            return "negative (medium)"
+
+    
 
 
 if __name__ == "__main__":

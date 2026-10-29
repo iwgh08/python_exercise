@@ -12,7 +12,10 @@ def label_prediction(prob, threshold):
     'negative'
     """
     # TODO
-    pass
+    if prob >= threshold:
+        return "positive"
+    else:
+        return "negative"
 
 
 if __name__ == "__main__":

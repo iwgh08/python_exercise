@@ -15,8 +15,14 @@ def is_leap_year(year):
     >>> is_leap_year(2000)
     True
     """
-    # TODO
-    pass
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return True
+            return False
+        return True
+    else:
+        return False
 
 
 if __name__ == "__main__":

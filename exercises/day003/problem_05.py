@@ -25,8 +25,19 @@ def training_decision(epoch, max_epochs, val_loss, best_loss, bad_epochs, patien
     >>> training_decision(3, 10, 0.1, 0.0, 0, 3)
     'wait'
     """
-    # TODO
-    pass
+    if best_loss == None or val_loss < best_loss:
+        if epoch >= max_epochs:
+            return "save, stop"
+        else:
+            return "save"
+    else:
+        if (bad_epochs + 1) >= patience:
+            return "stop"
+        elif epoch == max_epochs:
+            return "stop"
+        else:
+            return "wait"
+
 
 
 if __name__ == "__main__":
